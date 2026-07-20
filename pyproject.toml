@@ -1,0 +1,34 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "gesturenav"
+version = "0.1.0"
+description = "Touchless pan/orbit/zoom camera control from hand-landmark gestures"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.9"
+authors = [{ name = "Joe", email = "jtkmjoe@gmail.com" }]
+keywords = ["gesture", "hand-tracking", "mediapipe", "accessibility", "camera-control", "touchless", "3d"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Multimedia :: Graphics :: 3D Rendering",
+    "Topic :: Software Development :: Libraries",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[project.urls]
+Homepage = "https://github.com/Joetankm/gesturenav"
+Repository = "https://github.com/Joetankm/gesturenav"
+Issues = "https://github.com/Joetankm/gesturenav/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/gesturenav"]
