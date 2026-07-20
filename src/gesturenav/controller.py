@@ -1,6 +1,6 @@
 """Stateful gesture -> camera-control-delta controller.
 
-Feed it up to two hands' worth of landmarks per frame; it tracks pose
+Feed it up to two hands' worth of landmarks per frame, which tracks pose
 smoothing (EMA), pose-hold arming, and swipe/pinch detection, and returns
 a GestureState describing the pan/orbit/zoom delta for that frame.
 """
